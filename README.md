@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.assets/images/blog_card_preview_screenshot.jpg)
+![](assets/images/blog_card_preview_screenshot.jpg)
 
 ### Links
 
@@ -52,7 +52,7 @@ I do think I got a little carried away on my styling. I want to get to a point w
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [https://github.com/defenstration](https://github.com/defenstration)
 - Frontend Mentor - [@defenstration](https://www.frontendmentor.io/profile/defenstration)
 
 ## Acknowledgments
