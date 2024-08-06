@@ -1,0 +1,169 @@
+/*---------------------------------------*/
+/*Custom Properties                      */
+/*---------------------------------------*/
+
+/* Colors */
+:root {
+    --clr-yellow: 47 88% 63%;
+    --clr-white: 0 0% 100%;
+    --clr-gray500: 0 0% 42%;
+    --clr-gray950: 0 0 7%;
+}
+
+/*---------------------------------------*/
+/* Reset                                 */
+/*---------------------------------------*/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins                          */
+
+body, h1, h2, h3, p {
+    margin: 0
+}
+
+/* Set body                               */
+
+body {
+    font-family: 'Figtree', 'serif';
+    width: 100vw;
+    height: 100vh;
+    min-width: 340px;
+    background-color:  hsl(var(--clr-yellow) );
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+/* Image Settings                        */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+
+/*---------------------------------------*/
+/* Utility Classes                       */
+/*---------------------------------------*/
+
+/* Frontend Mentor Attribution*/
+.attribution { font-size: 11px; text-align: center; margin-top: 25px}
+.attribution a { color: hsl(228, 45%, 44%); margin-top: 25px}
+
+/* Screen Reader Only Class */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------*/
+/* Styling                               */
+/*---------------------------------------*/
+
+* {
+    /*border: 1px solid black;*/
+}
+
+.card {
+    height: 520px;
+    width: 384px;
+    background-color: hsl(var(--clr-white));
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 10px 10px black;
+}
+
+
+
+.svg-wrapper, .info-wrapper, .author {
+    width: 336px;
+    margin-inline: auto;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.svg-wrapper {
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.category {
+    background-color: hsl(var(--clr-yellow));
+    font-weight: bold;
+    border-radius: 5px;
+    width: 75px;
+}
+
+.date {
+    margin-top: 12px;
+}
+
+.blog-title, .description {
+    margin-top: 16px;
+}
+
+.author {
+    display: flex;
+    height: 35px;
+
+}
+
+.name {
+    margin-block: auto;
+    margin-left: 15px;
+}
+
+
+/*---------------------------------------*/
+/* Styling For Mobile                    */
+/*---------------------------------------*/
+
+@media (width <= 425px) {
+    .card {
+        width: 327px
+    }
+
+    .svg-wrapper, .info-wrapper, .author {
+        width: 277px;
+        margin-inline: auto;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
