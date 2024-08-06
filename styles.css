@@ -85,13 +85,18 @@ img {
     align-items: center;
 }
 
+.gray500 {
+    color: hsl(var(--clr-gray500))
+}
+
+.gray950 {
+    color: hsl(var(--clr-gray950))
+}
+
 /*---------------------------------------*/
 /* Styling                               */
 /*---------------------------------------*/
 
-* {
-    /*border: 1px solid black;*/
-}
 
 .card {
     height: 520px;
@@ -102,17 +107,12 @@ img {
     box-shadow: 10px 10px black;
 }
 
-
-
 .svg-wrapper, .info-wrapper, .author {
     width: 336px;
     margin-inline: auto;
     margin-top: 25px;
 }
 
-p {
-    font-size: 16px;
-}
 
 .svg-wrapper {
     height: 200px;
@@ -126,6 +126,7 @@ p {
     font-weight: bold;
     border-radius: 5px;
     width: 75px;
+    font-size: 14px;
 }
 
 .date {
@@ -139,12 +140,21 @@ p {
 .author {
     display: flex;
     height: 35px;
-
+    font-weight: bold;
 }
 
 .name {
     margin-block: auto;
     margin-left: 15px;
+    font-size: 16px;
+}
+
+.name, .date, .description {
+    font-size: 16px
+}
+
+.blog-title:hover {
+    color: hsl(var(--clr-yellow) )
 }
 
 
@@ -163,7 +173,8 @@ p {
         margin-top: 25px;
     }
 
-    p {
-        font-size: 14px;
+    .name, .date, .description {
+        font-size: 14px
     }
+
 }
